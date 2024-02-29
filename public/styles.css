@@ -1,0 +1,334 @@
+html {
+    box-sizing: border-box;
+  }
+
+.container{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #f6f6f5;
+    font-family: Arial, sans-serif;
+}
+.blink {
+    padding: 10px;
+    border-radius: 10px;
+    animation: blink 0.5s infinite;
+    color: rgb(0, 0, 0);
+}
+
+.createGameLabel {
+    margin-top: 5px;
+    font: 15px;
+    width: 250px;
+    color: black;
+    font-weight: bold;
+}
+
+.joinGameLabel {
+    font: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+#roomSetup {
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    background-color: #ffffff;
+}
+
+.roomButton {
+    background: rgb(103, 84, 225);
+    border-radius: 10px;
+    width: 60px;
+    color: white;
+}
+
+.inputLabel {
+    color: black;
+}
+
+.sliderLabel {
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+}
+
+.inputLabel {
+    margin-bottom: 5px;
+}
+
+.input-box {
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    width: 200px;
+}
+
+.roomButton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.roomButton:hover {
+    background-color: #0056b3;
+}
+
+#roombanner {
+    position: absolute;
+    border-radius: 5px;
+    margin-top: 25px;
+    padding: 5px;
+}
+
+#createGame {
+        /* border-radius: 30px; */
+    /* padding: 10px; */
+    color: white;
+    /* padding-top: 15px; */
+    /* padding-left: 30px; */
+}
+
+#joinGame {
+  
+
+    color: white;
+}
+
+.GameVerse{
+    color: rgb(26, 151, 57);
+    justify-content: end;
+    padding-right: 10px;
+    align-items: center;
+    font-size: large;
+    padding-top: 5px;
+    font-family: sans-serif;
+}
+
+.slidecontainer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #007bff;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #007bff;
+    cursor: pointer;
+}
+
+.blink {
+    animation: blinker 1s linear infinite;
+}
+
+#whotoplay {
+    position: absolute;
+    border-radius: 5px;
+    margin-top: 90px;
+    padding: 5px;
+}
+
+.container {
+    margin-top: 5px;
+}
+
+#restartButton {
+    margin-top: 300px;
+    margin-left: 20px;
+    font-size: 50px;
+    border-radius: 12px;
+    background-color: aquamarine;
+}
+
+#wTimerContainer{
+    display: block;
+}
+
+.chessboard{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+
+
+.chessboard > * {
+    border-style: solid;
+    border-width: 1px;
+    width: 50px;
+    opacity: 100%;
+    height: 50px;
+}
+
+#whitetimer {
+    font-size: 45px;
+    padding: 3px;
+    border-radius: 25px;
+    margin-right: 20px;
+    margin-top: 150px;
+    border-style: solid;
+    border-width: 4px;
+    background-color: #babcb4;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputLabel {
+    margin-bottom: 5px;
+}
+
+#blacktimer {
+    font-size: 45px;
+    padding: 3px;
+    border-radius: 25px;
+    margin-right: 20px;
+    margin-top: 285px;
+    border-style: solid;
+    border-width: 4px;
+    background-color: #babcb4;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center vertically */
+    background-color: #f6f6f5;
+    font-family: Arial, sans-serif;
+    height: 100vh; /* Ensure full height */
+    margin: 0; /* Remove default margin */
+}
+
+.container {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #ffffff;
+    max-width: 600px; /* Limit width for better readability */
+}
+
+h1, h2 {
+    text-align: center; /* Center headings */
+}
+
+/* Add more styling as needed */
+
+/* Your existing CSS */
+/* ... */
+
+/* Chessboard */
+.chessboard {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    margin: 20px auto; /* Center horizontally */
+}
+
+.chessboard > * {
+    border-style: solid;
+    border-width: 1px;
+    width: 50px;
+    height: 50px;
+}
+
+div.b_bishop {
+    content:url("./pieces/b_bishop.svg");
+}
+
+div.b_king {
+    content:url("./pieces/b_king.svg");
+}
+
+div.b_knight {
+    content:url("./pieces/b_knight.svg");
+}
+
+div.b_pawn {
+    content:url("./pieces/b_pawn.svg");
+}
+
+div.b_queen {
+    content:url("./pieces/b_queen.svg");
+}
+
+div.b_rook {
+    content:url("./pieces/b_rook.svg");
+}
+
+div.w_bishop {
+    content:url("./pieces/w_bishop.svg");
+}
+
+div.w_king {
+    content:url("./pieces/w_king.svg");
+}
+
+div.w_knight {
+    content:url("./pieces/w_knight.svg");
+}
+
+div.w_pawn {
+    content:url("./pieces/w_pawn.svg");
+}
+
+div.w_queen {
+    content:url("./pieces/w_queen.svg");
+}
+
+div.w_rook {
+    content:url("./pieces/w_rook.svg");
+}
